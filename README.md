@@ -1,35 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Airbnb Replica
 
-## Getting Started
+Welcome to the **Airbnb Replica**! This project is a clone of the popular Airbnb platform, built to demonstrate key features such as property listings, booking functionality, user authentication, and more. It is developed using modern web technologies to showcase a scalable, full-stack web application.
 
-First, run the development server:
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
+- **User Authentication**: Users can sign up, log in, and manage their profile securely.
+- **Property Listings**: Hosts can list their properties with detailed descriptions, images, and pricing information.
+- **Booking System**: Users can search for available properties and make bookings.
+- **Search Functionality**: Users can search for properties based on location, date, and price range.
+- **Responsive Design**: Fully responsive UI that works across devices (desktop, tablet, mobile).
+- **Admin Panel**: Manage users, listings, and bookings (if included).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
+- **Front-End**: 
+  - HTML5, CSS3, JavaScript (React.js)
+- **Back-End**:
+  - Node.js, Express.js
+- **Database**:
+  - MongoDB (NoSQL Database)
+- **Authentication**:
+  - JWT (JSON Web Tokens)
+- **Other Tools**:
+  - Git for version control
+  - Docker (optional for containerization)
+  
+## Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Tahahussain53110/airbnb_replica.git
+   ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. **Navigate to the project directory**:
+   ```bash
+   cd airbnb_replica
+   ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. **Install the dependencies** for both client and server:
+   - For the client (React):
+     ```bash
+     cd client
+     npm install
+     ```
+   - For the server (Node.js/Express):
+     ```bash
+     cd server
+     npm install
+     ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+4. **Set up the environment variables**:
+   Create a `.env` file in the root of the server directory with the following variables:
+   ```bash
+   MONGO_URI=your_mongodb_uri
+   JWT_SECRET=your_jwt_secret
+   ```
 
-## Learn More
+5. **Run the application**:
+   - Start the front-end client:
+     ```bash
+     cd client
+     npm start
+     ```
+   - Start the back-end server:
+     ```bash
+     cd server
+     npm start
+     ```
 
-To learn more about Next.js, take a look at the following resources:
+6. **Access the application**:  
+   The app will be running at `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
+- **Sign Up/Login**: Create a new account or log in with an existing account.
+- **Search Listings**: Use the search bar to find available properties.
+- **Make a Booking**: Select a property, choose dates, and make a booking.
+- **Host a Property**: If you are a host, you can add a new property for rent.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with a clear description of your changes.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# Airbnb" 
+## License
+This project is licensed under the **MIT License**.
